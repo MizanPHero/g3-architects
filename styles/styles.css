@@ -24,10 +24,16 @@ body {
 }
 
 p {
-    line-height: 26px;
     font-weight: 400;
     font-size: 16px;
     color: var(--lightgray);
+    line-height: 26px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--black);
 }
 
 /*************************
@@ -44,11 +50,6 @@ nav {
     justify-content: space-between;
 }
 
-.nav-title {
-    font-weight: 700;
-    font-size: 45px;
-    color: var(--black);
-}
 
 nav ul {
     display: flex;
@@ -138,7 +139,6 @@ nav ul li a {
 }
 
 .team-title {
-    font-size: 45px;
     margin: 0;
 }
 
@@ -176,9 +176,6 @@ nav ul li a {
 
 
 .feature-title {
-    font-weight: 700;
-    font-size: 45px;
-    color: var(--black);
     border-left: 5px solid var(--orange);
     padding-left: 20px;
 }
@@ -227,6 +224,54 @@ nav ul li a {
 .experience .exp {
     font-weight: 500;
     font-size: 45px;
+}
+
+/*****************************
+        fact section
+******************************/
+.fact {
+    padding: 0 240px;
+}
+
+.fact-description {
+    width: 40%;
+}
+
+.fact-item-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.fact-item {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+}
+
+.fact-item:hover {}
+
+.fact-inner-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 240px;
+    height: 240px;
+    box-sizing: border-box;
+}
+
+.fact-count {
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--black);
+    margin: 0;
+}
+
+.fact-desc {
+    font-weight: 600;
+    font-size: 20px;
 }
 
 /******************************
@@ -298,4 +343,41 @@ nav ul li a {
     .feature-image img {
         width: 100%;
     }
+
+    .experience {
+        display: none;
+    }
+
+
+    /* header,
+    .team,
+    .feature {
+        display: none;
+    } */
+
+    /********************
+        fact section 
+    *********************/
+    .fact {
+        padding: 0 20px;
+    }
+
+    .fact-description {
+        width: 100%;
+    }
+
+    .fact-item-container {
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .fact-inner-box {
+        width: 100%;
+    }
+
+    .fact-item {
+        margin-bottom: 20px;
+    }
+
 }
