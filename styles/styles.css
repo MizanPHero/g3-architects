@@ -23,6 +23,13 @@ body {
     margin: 0 auto;
 }
 
+p {
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--lightgray);
+}
+
 /*************************
       header section 
 **************************/
@@ -76,9 +83,6 @@ nav ul li a {
 }
 
 .banner-description {
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--lightgray);
     width: 60%;
     margin: 10px auto 40px;
 
@@ -154,13 +158,76 @@ nav ul li a {
 }
 
 .team-description {
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--lightgray);
-    line-height: 28px;
     margin: 30px 0 40px;
 }
 
+/*****************************
+        feature section
+******************************/
+.feature {
+    padding: 0 240px;
+    margin: 130px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 145px;
+    position: relative;
+}
+
+
+.feature-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--black);
+    border-left: 5px solid var(--orange);
+    padding-left: 20px;
+}
+
+.feature-description {
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    padding: 30px 40px 30px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+
+.feature-item-title,
+.feature-item-desc {
+    margin: 0;
+}
+
+.feature-item-title {
+    margin-bottom: 10px;
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+.experience {
+    position: absolute;
+    bottom: -25px;
+    right: 690px;
+    padding: 45px 42px;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+
+}
+
+.experience .year {
+    font-weight: 700;
+    font-size: 65px;
+}
+
+.experience .exp {
+    font-weight: 500;
+    font-size: 45px;
+}
 
 /******************************
        responsive styles 
@@ -215,5 +282,20 @@ nav ul li a {
 
     .team-photos {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    /********************
+        feature section 
+    *********************/
+    .feature {
+        padding: 0 20px;
+        margin: 50px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature-image img {
+        width: 100%;
     }
 }
