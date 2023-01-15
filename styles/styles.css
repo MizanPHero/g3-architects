@@ -99,12 +99,77 @@ nav ul li a {
     margin: 45px 0;
 }
 
+
+/********************
+     team section 
+*********************/
+.team {
+    padding: 0 240px;
+}
+
+.team-container {
+    padding: 0 60px;
+    margin-top: 85px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 70px;
+}
+
+.team-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.team-photos img {
+    width: 100%;
+}
+
+.team-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.team-title {
+    font-size: 45px;
+    margin: 0;
+}
+
+.team-title .lightgray {
+    font-weight: 500;
+    color: var(--lightgray);
+}
+
+.team-title .black {
+    font-weight: 700;
+    color: var(--black);
+}
+
+.team-title .orange {
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.team-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--lightgray);
+    line-height: 28px;
+    margin: 30px 0 40px;
+}
+
+
 /******************************
        responsive styles 
 *******************************/
 @media only screen and (max-width: 576px) {
 
-    /* header section */
+    /******************* 
+        header section 
+    *********************/
     header {
         padding: 0 20px;
     }
@@ -131,5 +196,24 @@ nav ul li a {
 
     .banner-description {
         width: 90%;
+    }
+
+
+    /********************
+        team section 
+    *********************/
+    .team {
+        padding: 20px 0;
+    }
+
+    .team-container {
+        padding: 0 20px;
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .team-photos {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
